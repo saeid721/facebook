@@ -8,13 +8,13 @@ class PostController extends GetxController {
   void onInit() {
     // Initialize with some sample posts
     posts.addAll([
-      Post(username: "User1", content: "This is my first post!", imageUrl: "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-beach-free-image-after-sunset-sky-free-photo.jpeg", timeAgo: "2 hours ago"),
-      Post(username: "User2", content: "Enjoying the sunny day!", timeAgo: "3 hours ago"),
-      Post(username: "User3", content: "Just had a great lunch!", timeAgo: "5 hours ago"),
-      Post(username: "User3", content: "Just had a great lunch!", timeAgo: "5 hours ago"),
-      Post(username: "User3", content: "Just had a great lunch!", timeAgo: "5 hours ago"),
-      Post(username: "User3", content: "Just had a great lunch!", timeAgo: "5 hours ago"),
-      Post(username: "User3", content: "Just had a great lunch!", timeAgo: "5 hours ago"),
+      Post(username: "Minhazul Islam Saeid", content: "This is my first post!", imageUrl: "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-beach-free-image-after-sunset-sky-free-photo.jpeg", timeAgo: "2 hours ago"),
+      Post(username: "Minhazul Islam Saeid", content: "Enjoying the sunny day!", timeAgo: "3 hours ago"),
+      Post(username: "Minhazul Islam Saeid", content: "Just had a great lunch!", timeAgo: "5 hours ago"),
+      Post(username: "Minhazul Islam Saeid", content: "Just had a great lunch!", timeAgo: "5 hours ago"),
+      Post(username: "Minhazul Islam Saeid", content: "Just had a great lunch!", timeAgo: "5 hours ago"),
+      Post(username: "Minhazul Islam Saeid", content: "Just had a great lunch!", timeAgo: "5 hours ago"),
+      Post(username: "Minhazul Islam Saeid", content: "Just had a great lunch!", timeAgo: "5 hours ago"),
     ]);
     super.onInit();
   }
