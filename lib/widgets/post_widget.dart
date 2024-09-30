@@ -4,46 +4,46 @@ import '../models/post.dart';
 class PostWidget extends StatelessWidget {
   final Post post;
 
-  const PostWidget({Key? key, required this.post}) : super(key: key);
+  const PostWidget({super.key, required this.post});
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
       elevation: 2,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
       child: Padding(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Header with user info
             Row(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 20,
-                  backgroundImage: AssetImage('assets/profile_pic.jpg'), // Replace with your image
+                  backgroundImage: AssetImage('assets/images/profile_pic.jpg'), // Replace with your image
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(post.username, style: TextStyle(fontWeight: FontWeight.bold)),
-                      SizedBox(height: 4),
-                      Text(post.timeAgo, style: TextStyle(color: Colors.grey, fontSize: 12)),
+                      Text(post.username, style: const TextStyle(fontWeight: FontWeight.bold)),
+                      const SizedBox(height: 4),
+                      Text(post.timeAgo, style: const TextStyle(color: Colors.grey, fontSize: 12)),
                     ],
                   ),
                 ),
               ],
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             // Post content
             Text(post.content.isNotEmpty ? post.content : "No content provided."),
             if (post.imageUrl != null && post.imageUrl!.isNotEmpty) ...[
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               ClipRRect(
                 borderRadius: BorderRadius.circular(12), // Set the desired radius
                 child: Image.network(
@@ -53,25 +53,25 @@ class PostWidget extends StatelessWidget {
                 ),
               ),
             ],
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             // Action buttons
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TextButton.icon(
                   onPressed: () {}, // Add like functionality
-                  icon: Icon(Icons.thumb_up, color: Colors.blue),
-                  label: Text("Like", style: TextStyle(color: Colors.blue)),
+                  icon: const Icon(Icons.thumb_up, color: Colors.blue),
+                  label: const Text("Like", style: TextStyle(color: Colors.blue)),
                 ),
                 TextButton.icon(
                   onPressed: () {}, // Add comment functionality
-                  icon: Icon(Icons.comment, color: Colors.blue),
-                  label: Text("Comment", style: TextStyle(color: Colors.blue)),
+                  icon: const Icon(Icons.comment, color: Colors.blue),
+                  label: const Text("Comment", style: TextStyle(color: Colors.blue)),
                 ),
                 TextButton.icon(
                   onPressed: () {}, // Add share functionality
-                  icon: Icon(Icons.share, color: Colors.blue),
-                  label: Text("Share", style: TextStyle(color: Colors.blue)),
+                  icon: const Icon(Icons.share, color: Colors.blue),
+                  label: const Text("Share", style: TextStyle(color: Colors.blue)),
                 ),
               ],
             ),

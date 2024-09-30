@@ -14,10 +14,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SingleChildScrollView( // Moved SingleChildScrollView to wrap the main column
+      body: SingleChildScrollView(
         child: Column(
           children: [
-            NewPostWidget(),
+            const NewPostWidget(),
             _buildStoriesSection(),
             GetBuilder<PostController>(builder: (controller) {
               return ListView.builder(

@@ -57,21 +57,21 @@ class StoryWidget extends StatelessWidget {
                       ),
                       Expanded(
                         child: Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.white,
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(12),
                               bottomRight: Radius.circular(12),
                             ),
                           ),
                           child: Center(
                             child: Container(
-                              margin: EdgeInsets.only(bottom: 30),
+                              margin: const EdgeInsets.only(bottom: 30),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(50),
                                 color: Colors.blue,
                               ),
-                              child: Icon(
+                              child: const Icon(
                                 Icons.add,
                                 color: Colors.white,
                                 size: 35,
@@ -102,9 +102,9 @@ class StoryWidget extends StatelessWidget {
                     ),
                   ),
                 if (isUserStory)
-                  Positioned(
+                  const Positioned(
                     bottom: 5,
-                    child: const Text(
+                    child: Text(
                       'Your Story',
                       style: TextStyle(
                         fontSize: 12,
