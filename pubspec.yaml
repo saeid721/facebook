@@ -1,0 +1,43 @@
+name: facebook
+description: "Facebook Clone by Flutter."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  get: ^4.6.5
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: klavika
+      fonts:
+        - asset: assets/fonts/facebook/KlavikaLight.otf
+          weight: 300
+        - asset: assets/fonts/facebook/KlavikaRegular.otf
+          weight: 400
+        - asset: assets/fonts/facebook/KlavikaMedium.otf
+          weight: 500
+        - asset: assets/fonts/facebook/KlavikaBoldBold.otf
+          weight: 700
